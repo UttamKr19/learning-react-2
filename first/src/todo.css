@@ -1,0 +1,33 @@
+.col-md-5{
+    margin-top: 50px;
+    background-image: linear-gradient(to left, #BDBBBE 0%, #9D9EA3 100%), radial-gradient(88% 271%, rgba(255, 255, 255, 0.25) 0%, rgba(254, 254, 254, 0.25) 1%, rgba(0, 0, 0, 0.25) 100%), radial-gradient(50% 100%, rgba(255, 255, 255, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%);
+ background-blend-mode: normal, lighten, soft-light;
+}
+
+input{
+    border-radius: 3px;
+    border: blue solid 2px;
+    /* width: 75% !important; */
+}
+
+i{
+    color:rgb(141, 16, 16);   
+    margin-left: 10px;
+    float: right; 
+}
+
+.addTodoStyle{
+    padding:"20px 20px";
+    width:"40%";
+    position:"fixed";
+    right:"0";
+}
+
+.fas{
+ float: right;
+ margin-right: 10px;
+}
+
+.cartItems{
+    background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+}

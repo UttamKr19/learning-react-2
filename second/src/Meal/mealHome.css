@@ -1,0 +1,88 @@
+#homeImage{
+    height: 100%;
+    width: 300px;
+    margin-left: 0;
+}
+
+#homeImage2{
+    height: 500px;
+    width: auto;
+    margin-left: 0;
+    opacity: 0.2;
+}
+
+#mealHome{
+    margin-top: -15px;
+    background-image: url("https://uploads-ssl.webflow.com/5773cfeac8d072ad1d609dcd/577e6b3f3a9f1a3f1535dc00_Ravioli_ricotta-cover.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#homeTexts{
+    padding:20px;
+    width: auto;
+    font-size:20px
+}
+
+#foodImagesHome{
+    background-image: none;
+    text-align: center;
+}
+#foodImagesHome ul li{
+    display: inline;
+    padding: 15px;
+}
+
+#mealCategories{
+   
+}
+
+/* #seaFood{
+    height: 200px;
+    width: 200px;
+} */
+
+#orderForm{
+    width: 50%;
+    padding: 10px;
+    margin: auto;
+}
+#prevOrders{
+    width: 80%;
+    margin: auto;
+}
+.seaFoodImg{
+    height: 100%;
+    width: 100%;
+}
+
+/* .grid-container-category {
+    display: inline-grid;
+    grid-column-gap: 10px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+  }
+
+  .grid-container-category-food{
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: auto ;
+    padding: 10px;
+  } */
+
+/*   
+.grid-container-seafood {
+    display: inline-grid;
+    grid-column-gap: 10px;
+    grid-template-columns: 33% 33% 33%;
+    padding: 10px;
+  } */
+/*   
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(119, 115, 115, 0.8);
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+  } */

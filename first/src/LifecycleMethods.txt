@@ -1,0 +1,70 @@
+import React, { Component } from 'react';
+import  ReactDOM  from 'react-dom';
+import "./App.css";
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+    // State will be messages: ["Hello World", "How are you"]
+    this.state = { messages: [], loading: true };
+  }
+  componentWillUpdate(newProps, newState)
+  {
+    console.log('component will update is triggered')
+    console.log(newProps)
+    console.log(newState);
+
+  }
+  componentDidUpdate(prevProps, prevState) {
+    console.log('Component Did Update')
+    console.log('prevProps:', prevProps);
+    console.log('prevState:', prevState);
+    
+  }
+
+ componentWillMount()
+ {
+   console.log('Component Will Mount is triggered');
+   console.log(ReactDOM.findDOMNode(this));
+ }
+
+  componentDidMount() {
+    console.log("ComponentDidMount is triggered");
+    console.log("DOM node : ", ReactDOM.findDOMNode(this));
+    setTimeout(() => this.setState({ messages: ["Hello World", "How are you?"], loading: false }),
+      5000 // 5 seconds
+    );
+  
+  }
+  componentWillUnmount() {
+    alert("I've been removed!");
+  }
+  renderProfile() {
+    if (this.state.loading) {
+      return (<div>Loading...</div>);
+    }
+    if (this.state.messages && this.state.messages.length > 0) {
+      return (
+        <div>
+          <ul>
+            {this.state.messages.map((msg, index) => <li key={`msg-${index}`}>{msg}</li>)}
+          </ul>
+        </div>
+      );
+    } else {
+      return (<div>No messages!</div>);
+    }
+  }
+  render() {
+    return (
+      <div className="App">
+        Display messages
+      <hr />
+        {this.renderProfile()}
+      </div>
+    );
+  }
+
+}
+
+export default App;
